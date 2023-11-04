@@ -1,23 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   index.js                                           :+:      :+:    :+:   */
+/*   Projects.jsx                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/02 07:09:18 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/03 15:37:42 by jmykkane         ###   ########.fr       */
+/*   Created: 2023/11/02 12:01:30 by jmykkane          #+#    #+#             */
+/*   Updated: 2023/11/02 12:10:22 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-import ReactDOM from 'react-dom/client';
-import React from 'react';
-import App from './App';
-import './css/index.css';
+const Projects = () => {
+  return (
+    <div className="Projects">
+      <h1>My proudest projects</h1>
+    </div>
+  )
+}
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+export default Projects

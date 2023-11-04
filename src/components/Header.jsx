@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   index.js                                           :+:      :+:    :+:   */
+/*   Header.jsx                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/02 07:09:18 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/03 15:37:42 by jmykkane         ###   ########.fr       */
+/*   Created: 2023/11/02 07:03:25 by jmykkane          #+#    #+#             */
+/*   Updated: 2023/11/03 11:34:19 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-import ReactDOM from 'react-dom/client';
-import React from 'react';
-import App from './App';
-import './css/index.css';
+// Header main component: Will have language switches, logo and menu
+const Header = () => {
+  return (
+    <div className="Header">
+      <a href="./">MENU</a>
+      <a href="./">HIRE ME</a>
+    </div>
+  )
+}
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+export default Header

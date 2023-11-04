@@ -1,23 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   index.js                                           :+:      :+:    :+:   */
+/*   Contact.jsx                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/02 07:09:18 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/03 15:37:42 by jmykkane         ###   ########.fr       */
+/*   Created: 2023/11/02 12:06:11 by jmykkane          #+#    #+#             */
+/*   Updated: 2023/11/02 12:08:35 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-import ReactDOM from 'react-dom/client';
-import React from 'react';
-import App from './App';
-import './css/index.css';
+const Contact = () => {
+  return (
+    <div className="Contact">
+      <h1>CONTACT</h1>
+    </div>
+  )
+}
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+export default Contact
