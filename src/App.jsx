@@ -6,7 +6,7 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 07:09:13 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/03 15:37:40 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/04 09:54:41 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,14 @@ import './css/App.css'
 function App() {
   return (
     <div className="App">
-      <div className="App-content-top"></div>
+      <div className="App-content-top"/>
       <div className="App-content">
         <Header />
         <Landing />
         <Projects />
         <Contact />
       </div>
-      <div className="App-content-bottom"></div>
+      <div className="App-content-bottom"/>
     </div>
   )
 }

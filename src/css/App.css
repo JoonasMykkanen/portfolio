@@ -6,7 +6,7 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 07:09:05 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/03 15:38:27 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/04 09:54:40 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 	background: #F8EAD8;
 	box-sizing: border-box;
 	position: fixed;
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	left: 0;
 	top: 0;
