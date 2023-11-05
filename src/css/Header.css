@@ -1,25 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Header.jsx                                         :+:      :+:    :+:   */
+/*   header.css                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/02 07:03:25 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/05 11:55:06 by jmykkane         ###   ########.fr       */
+/*   Created: 2023/11/05 11:53:44 by jmykkane          #+#    #+#             */
+/*   Updated: 2023/11/05 11:54:06 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-import '../css/Header.css'
-
-// Header main component: Will have language switches, logo and menu
-const Header = () => {
-  return (
-    <div className="Header">
-      <a href="./">MENU</a>
-      <a href="./">HIRE ME</a>
-    </div>
-  )
+.Header {
+	justify-content: space-between;
+	width: calc(100% - 6vh);
+	padding-left: 5vh;
+	padding-right: 5vh;
+	padding-top: 5vh;
+	position: absolute;
+	display: flex;
+	height: 6vh;
+	z-index: 10;
 }
 
-export default Header
+.Header a {
+	font-family: 'Monaco', 'Monospace';
+	color: #0C356A;
+	font-size: 20px;
+	
+	transition: transform 0.2s ease;
+}
+
+.Header a:hover {
+	transform: scale(1.1);
+}

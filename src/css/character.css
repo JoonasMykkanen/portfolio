@@ -6,11 +6,11 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 08:40:24 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/04 08:40:58 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/04 17:19:53 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-.image {
-	height: 100%;
+.Character {
+	height: 100vh;
 	width: 100%;
 }

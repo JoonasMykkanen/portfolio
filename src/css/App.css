@@ -6,7 +6,7 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 07:09:05 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/04 09:54:40 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/05 11:58:40 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 	background: #F8EAD8;
 	box-sizing: border-box;
 	position: fixed;
-	height: 100%;
+	height: 100vh;
 	width: 100%;
 	left: 0;
 	top: 0;
@@ -28,7 +28,7 @@
 	overflow-y: scroll;
 	padding-right: 3vh;
 	padding-left: 3vh;
-	height: 100%;
+	height: 100vh;
 	width: 100%;
 }
 
@@ -50,114 +50,6 @@
 	bottom: 0;
 	right: 0;
 	left: 0;
-}
-
-/* HEADER */
-.Header {
-	justify-content: space-between;
-	width: calc(100% - 6vh);
-	padding-left: 5vh;
-	padding-right: 5vh;
-	padding-top: 5vh;
-	position: absolute;
-	display: flex;
-	height: 6vh;
-	z-index: 10;
-}
-
-.Header a {
-	font-family: 'Monaco', 'Monospace';
-	color: #0C356A;
-	font-size: 20px;
-	
-	transition: transform 0.2s ease;
-}
-
-.Header a:hover {
-	transform: scale(1.1);
-}
-
-
-
-/* LANDING PAGE */
-.Landing {
-	background: #FFF2D8;
-	margin-top: -8vh;
-	display: flex;
-	height: 100vh;
-	width: 100%;
-	z-index: 5;
-
-}
-
-.Landing-left {
-	padding-left: 5vh;
-	padding-top: 30vh;
-	line-height: 1;
-	width: 50%;
-}
-
-.Landing-left h1 {
-	font-family: 'Roboto Slab', serif;
-	color: #0C356A;
-	font-size: 64px;
-}
-
-.Landing-left b {
-	font-family: 'Roboto Slab', serif;
-	color: #FFC436;
-	font-size: 64px;
-}
-
-.Landing-left span {
-	font-family: 'Monaco', serif;
-	margin-left: -10px;
-	color: #0C356A;
-	font-size: 64px;
-}
-
-.Landing-left p {
-	font-family: 'Roboto Slab', serif;
-	margin-top: 1vh;
-	color: #0C356A;
-	font-size: 24px;
-}
-
-.span-highlight {
-	font-family: 'Roboto Slab', serif !important;
-	color: #FFC436 !important;
-	font-size: 24px !important;
-	padding-left: 17px;
-	padding-right: 7px;
-  }
-
-.Landing-right {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 50%;
-}
-
-
-
-/* PROJECTS */
-.Projects {
-	background-color: #FFF2D8;
-	height: 100vh;
-}
-
-.Projects h1 {
-	font-family: 'Roboto Slab', serif;
-	color: #0C356A;
-	font-size: 32px;
-}
-
-
-
-/* CONTACT */
-.Contact {
-	background-color: #FFF2D8;
-	height: 100vh;
 }
 
 /* HIDING SCROLL BAR */

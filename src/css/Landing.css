@@ -1,0 +1,69 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   landing.css                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/05 11:57:32 by jmykkane          #+#    #+#             */
+/*   Updated: 2023/11/05 11:57:33 by jmykkane         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+.Landing {
+	background: #FFF2D8;
+	margin-top: -5vh;
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	z-index: 5;
+
+}
+
+.Landing-left {
+	padding-left: 5vh;
+	padding-top: 30vh;
+	line-height: 1;
+	width: 50%;
+}
+
+.Landing-left h1 {
+	font-family: 'Roboto Slab', serif;
+	color: #0C356A;
+	font-size: 64px;
+}
+
+.Landing-left b {
+	font-family: 'Roboto Slab', serif;
+	color: #FFC436;
+	font-size: 64px;
+}
+
+.Landing-left span {
+	font-family: 'Monaco', serif;
+	margin-left: -10px;
+	color: #0C356A;
+	font-size: 64px;
+}
+
+.Landing-left p {
+	font-family: 'Roboto Slab', serif;
+	margin-top: 1vh;
+	color: #0C356A;
+	font-size: 24px;
+}
+
+.span-highlight {
+	font-family: 'Roboto Slab', serif !important;
+	color: #FFC436 !important;
+	font-size: 24px !important;
+	padding-left: 17px;
+	padding-right: 7px;
+  }
+
+.Landing-right {
+	display: flex;
+	align-items: center;
+	padding-top: 10vh;
+	width: 50%;
+}

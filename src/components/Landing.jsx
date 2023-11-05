@@ -6,11 +6,12 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 07:47:33 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/02 15:26:15 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/05 11:57:58 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 import Character from "./Character"
+import '../css/Landing.css'
 
 const Landing = () => {
   return (

@@ -6,7 +6,7 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 15:47:47 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/02 17:59:39 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/05 13:51:27 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ import { watchViewport, unwatchViewport } from 'tornis';
 const MouseTracker = () => {
   // init values to zero
   const [mouseData, setMouseData] = useState({
+    moved: false,
     posX: 0,
     posY: 0,
     velX: 0,
@@ -28,6 +29,7 @@ const MouseTracker = () => {
   const updateValues = ({ mouse }) => {
     if (mouse.changed) {
       setMouseData({
+        moved: true,
         posX: mouse.x,
         posY: mouse.y,
         velX: mouse.velocity.x,

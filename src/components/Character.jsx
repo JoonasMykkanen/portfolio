@@ -6,54 +6,49 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 13:13:14 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/04 09:48:54 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/05 14:19:44 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// import characterSvg from '../resources/character.svg'
+import characterData from '../resources/char_simple.svg'
+import { useEffect, useState, useRef } from 'react'
+import SVG from 'react-inlinesvg'
+import gsap from 'gsap'
+
+
 import MouseTracker from '../MouseTracker'
-import '../css/character.css'
-
-// import React, {useRef, useEffect } from 'react'
-// import * as PIXI from 'pixi.js'
-
+import '../css/Character.css'
 
 const Character = () => {
+  const screenY = window.innerHeight / 2
+  const screenX = window.innerWidth / 2
+  
   const mouse = MouseTracker()
+  const svgRef = useRef(null)
 
-  // const pixiContainer = useRef(null)
-  // const app = useRef(null)
+  const updateDir = () => {
+    const newAngle = Math.atan2((mouse.posY - screenY), (mouse.posX - screenX))
+  }
 
-  // useEffect(() => {
-  //   app.current = new PIXI.Application({
-  //     width: 500,
-  //     height: 500,
-  //     transparent: true
-  //   })
+  useEffect(() => {
+    gsap.to(svgRef.current, {
+      rotation: 360, // Rotate the element 360 degrees
+      duration: 2, // Duration of the animation in seconds
+      ease: "none", // Type of easing (none for a linear animation)
+      repeat: -1, // -1 for infinite repeats
+      yoyo: true,
+    })
 
-  //   pixiContainer.current.appendChild(app.current.view)
-
-  //   app.current.loader.add(characterSvg).load((loader, resources) => {
-  //     const texture = PIXI.Texture.from(resources[characterSvg].url)
-  //     const sprite = new PIXI.Sprite(texture)
-      
-  //     // Adjust sprite properties if needed
-  //     sprite.x = app.current.screen.width / 2
-  //     sprite.y = app.current.screen.height / 2
-  //     sprite.anchor.set(0.5);
-
-  //     app.current.stage.addChild(sprite)
-  //   })
-
-  //   return () => {
-  //     app.current.destroy(true, true)
-  //     app.current = null
-  //   }
-  // }, [])
-
+    return () => {
+      gsap.killTweensOf(svgRef.current)
+    }
+  }, [])
+  
   return (
     <div className="Character">
-        
+      <svg ref={svgRef} width={500} height={500}>
+        <SVG src={characterData} />
+      </svg>
     </div>
   )
 }
