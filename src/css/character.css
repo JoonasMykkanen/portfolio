@@ -6,11 +6,19 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 08:40:24 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/04 17:19:53 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/06 16:23:44 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/* Character.css */
+
 .Character {
-	height: 100vh;
 	width: 100%;
+	height: 125%;
+	display: flex;
+	padding-left: 33%;
+	padding-bottom: 15vh;
+	justify-content: center;
 }
+
+  

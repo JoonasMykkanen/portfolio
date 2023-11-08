@@ -6,25 +6,28 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 11:57:32 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/05 11:57:33 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/06 15:51:49 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 .Landing {
 	background: #FFF2D8;
+	position: relative;
 	margin-top: -5vh;
 	display: flex;
 	height: 100vh;
 	width: 100%;
 	z-index: 5;
-
 }
 
 .Landing-left {
+	position: relative;
 	padding-left: 5vh;
 	padding-top: 30vh;
 	line-height: 1;
-	width: 50%;
+	height: 100vh;
+	width: 100%;
+	z-index: 10;
 }
 
 .Landing-left h1 {
@@ -62,8 +65,9 @@
   }
 
 .Landing-right {
-	display: flex;
-	align-items: center;
-	padding-top: 10vh;
-	width: 50%;
-}
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	z-index: 5;
+  }
+  

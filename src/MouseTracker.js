@@ -6,7 +6,7 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 15:47:47 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/05 13:51:27 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/06 06:07:12 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ const MouseTracker = () => {
   const updateValues = ({ mouse }) => {
     if (mouse.changed) {
       setMouseData({
-        moved: true,
+        moved: mouse.changed,
         posX: mouse.x,
         posY: mouse.y,
         velX: mouse.velocity.x,
