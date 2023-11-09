@@ -6,12 +6,13 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 11:57:32 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/06 15:51:49 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/09 07:32:18 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 .Landing {
 	background: #FFF2D8;
+	flex-direction: row;
 	position: relative;
 	margin-top: -5vh;
 	display: flex;
@@ -21,12 +22,13 @@
 }
 
 .Landing-left {
+	flex: 1;
 	position: relative;
 	padding-left: 5vh;
 	padding-top: 30vh;
 	line-height: 1;
 	height: 100vh;
-	width: 100%;
+	width: 50vh;
 	z-index: 10;
 }
 
@@ -65,9 +67,64 @@
   }
 
 .Landing-right {
-	position: absolute;
+	flex: 1;
 	height: 100vh;
-	width: 100%;
+	width: 50vh;
+	padding-right: 15vh;
 	z-index: 5;
   }
-  
+
+  @media (max-width: 1015px) {
+	.Landing {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.Landing-right,
+	.Landing-left {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: static;
+		width: auto;
+		height: auto;
+		padding-top: 5vh;
+		z-index: 1;
+	}
+
+	.Landing-right {
+		order: -1;
+		padding-right: 0;
+		padding-bottom: 0;
+		 margin-bottom: 0;
+	}
+
+	.Landing-left {
+		margin-top: -15vh;
+		padding-top: 0;
+		padding-left: 1vh;
+		padding-right: 1vh;
+	}
+
+	.Landing-left p,
+	.Landing-left span {
+		display: none;
+	}
+
+	.Landing-left b,
+	.Landing-left h1 {
+		font-family: 'Roboto Slab', serif;
+		color: #0C356A;
+		font-size: 46px;
+	}
+
+	.Landing-left b {
+		color: #FFC436;
+	}
+
+	.Character {
+		height: 100%;
+	}
+}

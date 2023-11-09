@@ -1,16 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   character.css                                      :+:      :+:    :+:   */
+/*   About.jsx                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/04 08:40:24 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/09 07:17:39 by jmykkane         ###   ########.fr       */
+/*   Created: 2023/11/09 06:33:18 by jmykkane          #+#    #+#             */
+/*   Updated: 2023/11/09 06:35:03 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-.Character {
-	width: 100%;
-	height: 110%;
+import '../css/About.css'
+
+const About = () => {
+  return (
+    <div className="About">
+      <h1>About</h1>
+    </div>
+  )
 }
+
+export default About

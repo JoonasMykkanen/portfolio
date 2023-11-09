@@ -6,7 +6,7 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 07:47:33 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/05 11:57:58 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/08 08:41:06 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ const Landing = () => {
           <span>.</span>
         </h1>
           <p>
-            I'm an
+            I'm a
             <span className="span-highlight">developer</span>
             from Hyvinkää, Finland.
           </p>

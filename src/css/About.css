@@ -1,16 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   character.css                                      :+:      :+:    :+:   */
+/*   About.css                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/04 08:40:24 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/09 07:17:39 by jmykkane         ###   ########.fr       */
+/*   Created: 2023/11/09 06:34:55 by jmykkane          #+#    #+#             */
+/*   Updated: 2023/11/09 06:35:00 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-.Character {
-	width: 100%;
-	height: 110%;
+.About {
+	background-color: #FFF2D8;
+	height: 100vh;
+}
+
+.About h1 {
+	font-family: 'Roboto Slab', serif;
+	color: #0C356A;
+	font-size: 32px;
 }
