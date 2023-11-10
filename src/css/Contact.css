@@ -6,11 +6,17 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 11:55:39 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/05 11:55:53 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/09 08:03:13 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 .Contact {
 	background-color: #FFF2D8;
 	height: 100vh;
+}
+
+.Contact h1 {
+	font-family: 'Roboto Slab', serif;
+	color: #0C356A;
+	font-size: 64px;
 }

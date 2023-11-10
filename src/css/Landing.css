@@ -6,13 +6,12 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 11:57:32 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/09 07:32:18 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/10 21:06:12 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 .Landing {
 	background: #FFF2D8;
-	flex-direction: row;
 	position: relative;
 	margin-top: -5vh;
 	display: flex;
@@ -21,14 +20,25 @@
 	z-index: 5;
 }
 
+.Landing-right {
+	padding-left: 75vh;
+	position: absolute;
+	height: 100vh;
+    width: 100%;
+	z-index: 6;
+    right: 0;
+    top: 0;
+}
+
 .Landing-left {
-	flex: 1;
-	position: relative;
+	position: absolute;
+	left: 0;
+	top: 0;
 	padding-left: 5vh;
-	padding-top: 30vh;
+	padding-top: 33vh;
 	line-height: 1;
 	height: 100vh;
-	width: 50vh;
+	width: 100%;
 	z-index: 10;
 }
 
@@ -47,7 +57,7 @@
 .Landing-left span {
 	font-family: 'Monaco', serif;
 	margin-left: -10px;
-	color: #0C356A;
+	color: #0174BE;
 	font-size: 64px;
 }
 
@@ -66,14 +76,6 @@
 	padding-right: 7px;
   }
 
-.Landing-right {
-	flex: 1;
-	height: 100vh;
-	width: 50vh;
-	padding-right: 15vh;
-	z-index: 5;
-  }
-
   @media (max-width: 1015px) {
 	.Landing {
 		display: flex;
@@ -84,25 +86,26 @@
 
 	.Landing-right,
 	.Landing-left {
-		display: flex;
 		justify-content: center;
 		align-items: center;
 		position: static;
-		width: auto;
-		height: auto;
 		padding-top: 5vh;
+		display: flex;
+		height: auto;
+		width: auto;
 		z-index: 1;
 	}
 
 	.Landing-right {
-		order: -1;
-		padding-right: 0;
 		padding-bottom: 0;
-		 margin-bottom: 0;
+		margin-bottom: 0;
+		padding-right: 0;
+		margin-left: 0;
+		order: -1;
 	}
 
 	.Landing-left {
-		margin-top: -15vh;
+		margin-top: -10vh;
 		padding-top: 0;
 		padding-left: 1vh;
 		padding-right: 1vh;

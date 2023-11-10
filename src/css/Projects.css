@@ -1,22 +1,68 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   projects.css                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/05 11:58:43 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/05 11:58:52 by jmykkane         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 .Projects {
 	background-color: #FFF2D8;
-	height: 100vh;
+	padding-right: 3vh;
+	padding-left: 3vh;
+	padding-top: 5vh;
+	height: auto;
+	width: 100%;
+}
+
+.Projects-heading {
+	justify-content: center;
+	flex-direction: row;
+	display: flex;
 }
 
 .Projects h1 {
 	font-family: 'Roboto Slab', serif;
 	color: #0C356A;
-	font-size: 32px;
+	font-size: 48px;
+}
+
+.Projects span {
+	font-family: 'Monaco', serif;
+	margin-left: -1vh;
+	color: #0174BE;
+	font-size: 48px;
+}
+
+.cards {
+	margin-left: 12.5%;
+	margin-top: 1vh;
+	width: 75%;
+}
+
+.cards-right {
+	justify-content: right;
+	display: flex;
+}
+
+.cards-left {
+	justify-content: left;
+	display: flex;
+}
+
+.item {
+	font-family: 'Monaco', serif;
+	border: #6B4E31 solid 3px;
+	background-color: #D1B48C;
+	flex-direction: column;
+	position: relative;
+	border-radius: 3vh;
+	display: flex;
+	padding: 3vh;
+	height: 33vh;
+	margin: 1vh;
+	width: 66vh;
+}
+
+.item h2 {
+	color: #0174BE;
+	line-height: 1.5;
+	font-size: 24px;
+}
+
+.item-heading {
+	font-size: 14px;
+	color: #0C356A;
 }

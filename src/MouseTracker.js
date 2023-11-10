@@ -6,12 +6,12 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 15:47:47 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/06 06:07:12 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/09 21:55:45 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-import { useState, useEffect } from 'react';
 import { watchViewport, unwatchViewport } from 'tornis';
+import { useState, useEffect } from 'react';
 
 // Custom hook for mouse tracking using tornis
 const MouseTracker = () => {

@@ -6,23 +6,20 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 13:13:14 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/09 06:32:12 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/10 09:07:08 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 import characterData from '../resources/character.svg'
 import { useEffect, useState, useRef } from 'react'
-import MouseTracker from '../MouseTracker'
 import SVG from 'react-inlinesvg'
 import '../css/Character.css'
 import gsap from 'gsap'
   
-const Character = () => {
+const Character = ({ mouse }) => {
   const [character, setCharacterData] = useState([])
-  const mouse = MouseTracker()
   const svgRef = useRef(null)
 
-  
   const createCharacter = () => {
     // List of all elements to be animated, found by ID or class
     const elements = [
@@ -35,6 +32,8 @@ const Character = () => {
       { name: 'face', selector: '#top' }
     ]
 
+    // Creating a list of objects that hold inside individual elements
+    //  of the character as well as their x,y cordinates
     const characterData = elements.reduce((acc, element) => {
       const child = svgRef.current.querySelector(element.selector)
       if (child) {
@@ -95,7 +94,7 @@ const Character = () => {
     let nodX = ((maxDistanceX - mouse.posX) / maxDistanceX) * (offset * 0.75)
 
     gsap.to(character.head.obj, {
-      transformOrigin: '50% 50%',
+      transformOrigin: 'bottom center',
       rotation: angle,
       ease: 'expo',
       x: nodX,
@@ -108,7 +107,8 @@ const Character = () => {
     return false
   }
 
-  useEffect(() => { // useEffect will envoke all animations
+  // useEffect will envoke all animations each frame
+  useEffect(() => { 
     if (svgRef.current) {
       if (!expression()) {
         eyebrows()
@@ -117,10 +117,10 @@ const Character = () => {
       }
     }
     
-    return () => { // returing from useEffect clears gsap 
-      gsap.killTweensOf(svgRef) 
-    }
-  }, [mouse.posX, mouse.posY]) // updating based on mouse
+    // returing from useEffect clears gsap 
+    return () => gsap.killTweensOf(svgRef)
+  // updating based on mouse
+  }, [mouse.posX, mouse.posY])
   
   // Element itself is actually super simple, one line of svg injection
   return (
