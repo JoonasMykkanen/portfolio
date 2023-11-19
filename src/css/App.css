@@ -6,7 +6,7 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 07:09:05 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/10 09:34:28 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/19 16:21:28 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,20 +16,19 @@
 /* GENERAL */
 .App {
 	background: #F8EAD8;
-	box-sizing: border-box;
 	position: fixed;
 	height: 100vh;
-	width: 100%;
+	width: 100vw;
 	left: 0;
 	top: 0;
 }
 
 .App-content {
+	height: calc(100vh - 6vh);
+	width: calc(100vw - 6vh);
 	overflow-y: scroll;
 	padding-right: 3vh;
 	padding-left: 3vh;
-	height: 100vh;
-	width: 100%;
 }
 
 .App-content-top {
@@ -56,12 +55,10 @@
 .App-content::-webkit-scrollbar { /* Safari and Chrome */
 	display: none;
 }
-
 .App-content { /* Firefox */
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
 }
-
 .App-content::-ms-Scrollbar { /* Edge */
     display: none;
 }

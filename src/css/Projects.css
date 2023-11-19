@@ -1,68 +1,97 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Projects.css                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/16 20:00:58 by jmykkane          #+#    #+#             */
+/*   Updated: 2023/11/19 19:09:45 by jmykkane         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 .Projects {
 	background-color: #FFF2D8;
-	padding-right: 3vh;
-	padding-left: 3vh;
-	padding-top: 5vh;
-	height: auto;
-	width: 100%;
-}
+	padding-top: 20vh;
+	height: 150vh;
+	width: auto;
 
-.Projects-heading {
-	justify-content: center;
-	flex-direction: row;
-	display: flex;
+	/* box-sizing: border-box; */
 }
 
 .Projects h1 {
 	font-family: 'Roboto Slab', serif;
+	/* display: flex; */
+	/* justify-content: center; */
+	margin-bottom: 3vh;
 	color: #0C356A;
-	font-size: 48px;
+	font-size: 64px;
 }
 
 .Projects span {
 	font-family: 'Monaco', serif;
-	margin-left: -1vh;
+	margin-left: -10px;
 	color: #0174BE;
-	font-size: 48px;
+	font-size: 64px;
 }
-
-.cards {
-	margin-left: 12.5%;
-	margin-top: 1vh;
-	width: 75%;
-}
-
-.cards-right {
-	justify-content: right;
-	display: flex;
-}
-
-.cards-left {
-	justify-content: left;
-	display: flex;
-}
-
-.item {
-	font-family: 'Monaco', serif;
-	border: #6B4E31 solid 3px;
-	background-color: #D1B48C;
+  
+.container {
+	align-items: flex-start;
 	flex-direction: column;
-	position: relative;
-	border-radius: 3vh;
+	justify-content: center;
 	display: flex;
-	padding: 3vh;
-	height: 33vh;
-	margin: 1vh;
-	width: 66vh;
+	width: 33%;
+
+	font-family: 'Roboto Slab', serif;
 }
 
-.item h2 {
-	color: #0174BE;
-	line-height: 1.5;
-	font-size: 24px;
-}
-
-.item-heading {
-	font-size: 14px;
+.text {
+	font-size: 5vw;
+	line-height: 100%;
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 100%;
+	/* color: rgb(182, 182, 182, 0.2); */
 	color: #0C356A;
+	background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-size: 0%;
+	transition: background-size cubic-bezier(.1,.5,.5,1) 0.5s;
+
+	border-bottom: 1px solid #2F2B28;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	position: relative;
+}
+
+/* What comes on hovering */
+.container span {
+	position: absolute;
+	margin-left: 0 !important; 
+	height: 100%;
+	width: 100%;
+	background-color: #D1B48C;
+	color: #0174BE;
+
+	clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+	transform-origin: center;
+	transition: all cubic-bezier(.1,.5,.5,1) 0.4s;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/* Rectangle animation */
+.text:hover > span {
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.container a {
+	text-decoration: none;
+	color: inherit;
 }

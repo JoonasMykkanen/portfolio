@@ -5,47 +5,32 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/09 17:30:23 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/10 22:44:35 by jmykkane         ###   ########.fr       */
+/*   Created: 2023/11/16 19:54:16 by jmykkane          #+#    #+#             */
+/*   Updated: 2023/11/19 18:57:13 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-import React, { useEffect, useRef } from 'react'
+import { useEffect } from 'react'
+import data from '../utils/ProjectData'
 import '../css/Projects.css'
+import gsap from 'gsap'
 
-const Item = ({ name }) => {
-  return (
-    <div className='item'>
-      <p className='item-heading'>Project idea</p>
-      <h2>{name}</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-    </div>
-  )
-}
+const Projects = ({ mouse }) => {
 
-const Projects = () => {
+ 
+  
   return (
     <div className='Projects'>
-      <div className='Projects-heading'>
-        <h1>My work so far</h1>
-        <span>.</span>
-      </div>
-      <div className='cards'>
-       <div className='cards-left'>
-          <Item name='miniRT' className={'item-left'}/>
-        </div>
-        <div className='cards-right'>
-          <Item name='webserv' className={'item-right'}/>
-        </div>
-        <div className='cards-left'>
-          <Item name='Minishell' className={'item-left'}/>
-        </div>
+      <h1>Projects<span>.</span></h1>
+        <div className="container">
+          <h2 className="text">miniRT<span>WOAH</span></h2>
+          <h2 className="text">Minishell<span>AND CLIPPING</span></h2>
+          <h2 className="text">Philosophers<span>CRAZYYY</span></h2>
+          <h2 className="text">Libft<span><a href="https://stacksorted.com/text-effects/minh-pham" target="_blank">SOURCE</a></span></h2>
+          <h2 className="text">PushSwap<span><a href="https://twitter.com/juxtopposed" target="_blank">LET'S CONNECT</a></span></h2>
       </div>
     </div>
   )
 }
 
-export default Projects;
+export default Projects

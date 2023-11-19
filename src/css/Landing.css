@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   landing.css                                        :+:      :+:    :+:   */
+/*   Landing.css                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 11:57:32 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/10 21:06:12 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/19 16:29:40 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,12 @@
 }
 
 .Landing-right {
-	padding-left: 75vh;
+	padding-left: 40vh;
 	position: absolute;
 	height: 100vh;
     width: 100%;
 	z-index: 6;
-    right: 0;
+    left: 0;
     top: 0;
 }
 
@@ -34,7 +34,7 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	padding-left: 5vh;
+	padding-left: 3vh;
 	padding-top: 33vh;
 	line-height: 1;
 	height: 100vh;

@@ -6,7 +6,7 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 15:47:47 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/09 21:55:45 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/18 08:14:26 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@ import { useState, useEffect } from 'react';
 
 // Custom hook for mouse tracking using tornis
 const MouseTracker = () => {
-  // init values to zero
   const [mouseData, setMouseData] = useState({
     moved: false,
+    scrollY: 0,
     posX: 0,
     posY: 0,
     velX: 0,
@@ -26,10 +26,11 @@ const MouseTracker = () => {
 
   // this function will be provided to tornis api
   // tornins returns with state object with current data
-  const updateValues = ({ mouse }) => {
-    if (mouse.changed) {
+  const updateValues = ({ mouse, scroll }) => {
+    if (mouse.changed || scroll.changed) {
       setMouseData({
         moved: mouse.changed,
+        scrollY: scroll.top,
         posX: mouse.x,
         posY: mouse.y,
         velX: mouse.velocity.x,

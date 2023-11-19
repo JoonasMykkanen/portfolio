@@ -6,7 +6,7 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 13:13:14 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/10 09:07:08 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/16 19:06:53 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ const Character = ({ mouse }) => {
     setCharacterData(characterData)
   }
 
-  const eyebrows = () => {
+  const animateEyebrows = () => {
     const maxMovement = window.innerHeight / 100
     const maxDistance = window.innerWidth / 2
     let normalizedPosition = (maxDistance - mouse.posX) / maxDistance
@@ -63,7 +63,7 @@ const Character = ({ mouse }) => {
     }
   }
 
-  const eyes = () => {
+  const animateEyes = () => {
     const maxMovementY = window.innerHeight / 50
     const maxMovementX = window.innerWidth / 50
     const maxDistanceY = window.innerHeight / 2
@@ -75,11 +75,11 @@ const Character = ({ mouse }) => {
     const deltaY = (normalY * maxMovementY) * -1
     const deltaX = (normalX * maxMovementX) * -1
 
-    gsap.to(character.rightEye.obj, { x: deltaX, y: deltaY, ease: 'power2' });
-    gsap.to(character.leftEye.obj, { x: deltaX, y: deltaY, ease: 'power2' });
+    gsap.to(character.rightEye.obj, { x: deltaX, y: deltaY, ease: 'power4.out' });
+    gsap.to(character.leftEye.obj, { x: deltaX, y: deltaY, ease: 'power4.out' });
   }
 
-  const head = () => {
+  const animateHead = () => {
     const maxAngle = 1.5
     const offset = window.innerWidth / 300
     const maxDistanceY = window.innerHeight / 2
@@ -104,25 +104,22 @@ const Character = ({ mouse }) => {
   }
 
   const expression = () => { 
-    return false
+    return false // TODO --> add expressions like confused and exited
   }
 
-  // useEffect will envoke all animations each frame
   useEffect(() => { 
     if (svgRef.current) {
       if (!expression()) {
-        eyebrows()
-        eyes()
-        head()
+        animateEyebrows()
+        animateEyes()
+        animateHead()
       }
     }
     
-    // returing from useEffect clears gsap 
     return () => gsap.killTweensOf(svgRef)
-  // updating based on mouse
+
   }, [mouse.posX, mouse.posY])
   
-  // Element itself is actually super simple, one line of svg injection
   return (
     <div className="Character">
       <SVG src={characterData} innerRef={svgRef} onLoad={createCharacter}/>
