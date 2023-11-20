@@ -6,26 +6,34 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 20:00:58 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/19 19:09:45 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/20 06:46:32 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 .Projects {
 	background-color: #FFF2D8;
+	position: relative;
 	padding-top: 20vh;
 	height: 150vh;
-	width: auto;
+	box-sizing: border-box;
+	width: calc(100vw - 6vh);
+	padding-left: 5vh;
 
-	/* box-sizing: border-box; */
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
 }
 
 .Projects h1 {
 	font-family: 'Roboto Slab', serif;
-	/* display: flex; */
-	/* justify-content: center; */
-	margin-bottom: 3vh;
+	text-decoration: underline;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 12vh;
 	color: #0C356A;
 	font-size: 64px;
+	margin-right: 0;
+	padding-right: 0;
 }
 
 .Projects span {
@@ -33,49 +41,56 @@
 	margin-left: -10px;
 	color: #0174BE;
 	font-size: 64px;
+	margin-right: 0;
+	padding-right: 0;
 }
   
 .container {
-	align-items: flex-start;
-	flex-direction: column;
-	justify-content: center;
-	display: flex;
-	width: 33%;
-
 	font-family: 'Roboto Slab', serif;
+	box-sizing: border-box;
+	width: 40%;
 }
 
 .text {
-	font-size: 5vw;
+	height: 12vh;
+	font-size: 10vh;
 	line-height: 100%;
 	margin-top: 0;
 	margin-bottom: 0;
 	width: 100%;
-	/* color: rgb(182, 182, 182, 0.2); */
 	color: #0C356A;
 	background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
 	-webkit-background-clip: text;
 	background-clip: text;
 	background-size: 0%;
 	transition: background-size cubic-bezier(.1,.5,.5,1) 0.5s;
-
-	border-bottom: 1px solid #2F2B28;
-
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
-	justify-content: center;
+	justify-content: flex-start;
+	border-bottom: 2px solid #6B4E31;
+}
+
+.left {
 	position: relative;
+	width: 100%;
+}
+
+.right {
+	width: calc(55% - 5vh);
+	position: absolute;
+	margin-left: 42.5%;
+	padding-top: 5%;
 }
 
 /* What comes on hovering */
 .container span {
+	font-family: 'Roboto Slab', serif;
 	position: absolute;
 	margin-left: 0 !important; 
 	height: 100%;
 	width: 100%;
-	background-color: #D1B48C;
-	color: #0174BE;
+	background-color: #FFC436;
+	/* color: linear-gradient(to right, #0174BE, #FFC436) no-repeat; */
 
 	clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
 	transform-origin: center;

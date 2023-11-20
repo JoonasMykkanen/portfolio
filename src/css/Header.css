@@ -6,17 +6,17 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 11:53:44 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/19 17:06:42 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/20 06:43:19 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 .Header {
 	justify-content: space-between;
 	box-sizing: border-box;
-	width: calc(100% - 6vh);
-	padding-left: 3vh;
-	padding-right: 3vh;
-	padding-top: 3vh;
+	width: calc(100% - 5vh);
+	padding-left: 5vh;
+	padding-right: 5vh;
+	padding-top: 5vh;
 	position: absolute;
 	display: flex;
 	height: 6vh;

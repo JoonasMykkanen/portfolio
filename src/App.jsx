@@ -6,7 +6,7 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 07:09:13 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/19 18:21:04 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/20 06:57:52 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,17 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Landing from './components/Landing'
 import Header from './components/Header'
+import { useRef } from 'react'
 import './css/App.css'
 
 function App() {
-  const mouse = MouseHook()
+  const contentRef = useRef(null)
+  const mouse = MouseHook(contentRef)
 
   return (
     <div className="App">
       <div className="App-content-top"/>
-      <div className="App-content" >
+      <div ref={contentRef} className="App-content" >
         {/* Actual content of the page */}
         <Header />
         <Landing mouse={mouse}/>
