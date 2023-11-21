@@ -6,7 +6,7 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 07:09:13 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/20 06:57:52 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/21 11:05:25 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ function App() {
         <Header />
         <Landing mouse={mouse}/>
         <Projects mouse={mouse}/>
-        {/* <Contact /> */}
+        <Contact />
         {/* -------------------------- */}
       </div>
       <div className="App-content-bottom"/>

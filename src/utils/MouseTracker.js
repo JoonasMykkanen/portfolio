@@ -6,7 +6,7 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 15:47:47 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/20 07:12:58 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/20 07:19:51 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,14 @@ const MouseTracker = (ref) => {
   // tornins returns with state object with current data
   const updateValues = ({ mouse }) => {  
     if (mouse.changed) {
-      setMouseData({
+      setMouseData(prevData => ({
+        ...prevData,
         moved: mouse.changed,
         posX: mouse.x,
         posY: mouse.y,
         velX: mouse.velocity.x,
         velY: mouse.velocity.y
-      })
+      }))
     }
   }
 

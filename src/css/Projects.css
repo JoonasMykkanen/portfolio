@@ -6,7 +6,7 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 20:00:58 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/20 06:46:32 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/21 11:15:43 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,10 @@
 	background-color: #FFF2D8;
 	position: relative;
 	padding-top: 20vh;
-	height: 150vh;
+	height: 115vh;
 	box-sizing: border-box;
 	width: calc(100vw - 6vh);
 	padding-left: 5vh;
-
 	display: flex;
 	align-items: flex-start;
 	flex-direction: column;
@@ -39,6 +38,7 @@
 .Projects span {
 	font-family: 'Monaco', serif;
 	margin-left: -10px;
+	margin-top: 0.5px;
 	color: #0174BE;
 	font-size: 64px;
 	margin-right: 0;
@@ -76,10 +76,67 @@
 }
 
 .right {
-	width: calc(55% - 5vh);
+	width: calc(55% - 3vh);
 	position: absolute;
-	margin-left: 42.5%;
+	margin-left: 40%;
 	padding-top: 5%;
+}
+
+.item-details {
+	position: absolute;
+	padding-left: 3vh;
+	height: 80vh;
+	width: 100%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.item-mask {
+	position: absolute;
+	width: 75%;
+	display: flex;
+	justify-content: flex-end;
+	right: 0;
+	-webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+	mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+}
+
+.item-text {
+	position: absolute;
+	margin-left: 3vh;
+	height: 41vh;
+	width: 35%;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: start;
+}
+  
+.item-details p {
+	font-family: 'Roboto Slab', serif;
+	color: #0C356A;
+	font-size: 20px;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+
+.item-details h3 {
+	font-family: 'Roboto Slab', serif;
+	color: #0C356A;
+	font-size: 32px;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+
+.item-details img {
+	clip-path: circle(50% at 50% 50%);
+	height: auto;
+	width: 80%;
 }
 
 /* What comes on hovering */
@@ -90,7 +147,6 @@
 	height: 100%;
 	width: 100%;
 	background-color: #FFC436;
-	/* color: linear-gradient(to right, #0174BE, #FFC436) no-repeat; */
 
 	clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
 	transform-origin: center;
@@ -104,6 +160,7 @@
 /* Rectangle animation */
 .text:hover > span {
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	cursor: pointer;
 }
 
 .container a {
