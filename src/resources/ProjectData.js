@@ -6,14 +6,14 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 08:01:08 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/22 15:44:05 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/22 18:43:59 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // Datastructure for projects base
 const data = {
   'miniRT': {
-    'text': 'In this team based project, we developed a 3D graphics engine to simulate how light interacts with different objects to create realistic image with raytracing. Performance was key factor when making decisions from our cohort we were only team to implement multithreading to boost it.',
+    'text': 'In this team based project, we developed a 3D graphics engine to simulate how light interacts with different objects to create realistic image with raytracing.',
     'sub': 'psssst',
     'stack': ['C', 'threadpool', 'vectors'],
     'icon': './src/resources/icons/rt.png'
