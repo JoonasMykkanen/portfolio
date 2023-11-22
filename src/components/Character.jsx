@@ -6,14 +6,14 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 13:13:14 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/19 23:01:00 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/22 17:03:50 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 import characterData from '../resources/character.svg'
 import { useEffect, useState, useRef } from 'react'
 import SVG from 'react-inlinesvg'
-import '../css/Character.css'
+import '../css/character.css'
 import gsap from 'gsap'
   
 const Character = ({ mouse }) => {
@@ -90,7 +90,7 @@ const Character = ({ mouse }) => {
     normalX = Math.min(Math.max(normalX, -maxAngle), maxAngle)
     let angle = normalX * normalY
     
-    let nodY = ((maxDistanceY - mouse.posY) / maxDistanceY) * -offset
+    let nodY = ((maxDistanceY - mouse.posY) / maxDistanceY) * (-offset * 1.25)
     let nodX = ((maxDistanceX - mouse.posX) / maxDistanceX) * (offset * 0.75)
 
     gsap.to(character.head.obj, {

@@ -6,7 +6,7 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 05:52:35 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/21 10:10:05 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/22 15:28:10 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,9 +42,15 @@ const ProjectTtem = ({ objRef, current, data }) => {
       {
         project ?
         <>
-          <div className='item-text'>
+          <div className='item-details-text'>
             <h3>{current}</h3>
             <p>{project.text}</p>
+            <br />
+            <div className='stack'>
+              {Object.entries(project.stack).map(([index, item]) => (
+                <p key={index} className='stack-item'>{item}</p>
+              ))}
+            </div>
           </div>
           <div className='item-mask'>
             <img src={img} alt='error'/>

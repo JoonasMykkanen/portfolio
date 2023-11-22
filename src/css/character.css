@@ -1,16 +1,54 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   character.css                                      :+:      :+:    :+:   */
+/*   Character.css                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 08:40:24 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/10 08:38:41 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/22 17:02:55 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 .Character {
 	height: 110%;
 	width: 100%;
+}
+
+/* Shadows of char */
+#right_hair_shadow,
+#left_hair_shadow,
+#right_ear_shadow,
+#left_ear_shadow,
+#top_hair_shadow,
+#shirt_shadow,
+#chin_shadow,
+#nose_shadow,
+#face
+{
+	fill: var(--secondary) !important;
+}
+
+/* Outlines of char */
+#inner_glasses_right,
+#inner_glasses_left,
+#right_ear_nub,
+#right_eyebrow,
+#left_eyebrow,
+#left_ear_nub,
+#bottom_hair,
+#right_hair,
+#shoulders,
+#right_ear,
+#right_eye,
+#left_hair,
+#top_hair,
+#left_ear,
+#left_eye,
+#glasses,
+#mouth,
+#nose,
+#jaw
+{
+	fill: var(--highlight) !important;
 }

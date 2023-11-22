@@ -6,7 +6,7 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 11:53:44 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/20 16:45:24 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/21 21:43:00 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@
 .Header a {
 	font-family: 'Monaco', 'Monospace';
 	text-decoration: none;
-	color: #0C356A;
+	color: var(--primary);
 	font-size: 20px;
 	
 	transition: transform 0.2s ease;

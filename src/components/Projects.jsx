@@ -6,7 +6,7 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 19:54:16 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/21 10:21:48 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/22 16:33:30 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,20 @@ import data from '../resources/ProjectData'
 import ProjectTtem from './Project-item'
 import SVG from 'react-inlinesvg'
 import '../css/Projects.css'
+import '../css/Question.css'
 import gsap from 'gsap'
+
+const liProfile = 'https://www.linkedin.com/in/joonas-mykkänen-bb5739230/'
 
 const Item = (props) => {
   return (
     <>
       <div onMouseEnter={props.onMouseEnter} onMouseLeave={props.onMouseLeave} className='left'>
-        <h2 className="text">{props.title}<span>{props.sub}</span></h2>
+        {
+          props.title === 'Philosophers'
+            ? <a href={liProfile}><h2 className="text">{props.title}<span>{props.sub}</span></h2></a>
+            : <h2 className="text">{props.title}<span>{props.sub}</span></h2>
+        }
       </div>
     </>
   )

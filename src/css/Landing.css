@@ -6,12 +6,11 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 11:57:32 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/19 22:08:46 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/21 23:15:36 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 .Landing {
-	background: #FFF2D8;
 	position: relative;
 	margin-top: -5vh;
 	display: flex;
@@ -19,6 +18,8 @@
 	width: calc(100vw - 6vh);
 	box-sizing: border-box;
 	z-index: 5;
+
+	background: var(--background);
 }
 
 .Landing-right {
@@ -43,37 +44,43 @@
 }
 
 .Landing-left h1 {
-	font-family: 'Roboto Slab', serif;
-	color: #0C356A;
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
 	font-size: 64px;
+	
+	color: var(--primary);
 }
 
 .Landing-left b {
-	font-family: 'Roboto Slab', serif;
-	color: #FFC436;
+	font-family: 'Merriweather', serif;
+	font-weight: 900;
 	font-size: 64px;
+	
+	color: var(--detail);
 }
 
 .Landing-left span {
-	font-family: 'Monaco', serif;
+	font-family: 'Merriweather', serif;
 	margin-left: -10px;
-	color: #0174BE;
 	font-size: 64px;
+	color: var(--highlight);
 }
 
 .Landing-left p {
-	font-family: 'Roboto Slab', serif;
-	margin-top: 1vh;
-	color: #0C356A;
+	font-family: 'Merriweather', serif;
+	margin-top: -2vh;
 	font-size: 24px;
+	
+	color: var(--primary);
 }
 
 .span-highlight {
-	font-family: 'Roboto Slab', serif !important;
-	color: #FFC436 !important;
+	font-family: 'Merriweather', serif;
 	font-size: 24px !important;
 	padding-left: 17px;
 	padding-right: 7px;
+	
+	color: var(--detail) !important;
 }
 
 /* Scale for smaller screens */
@@ -115,19 +122,17 @@
 	.Landing-left p,
 	.Landing-left span {
 		display: none;
+		color: var(--highlight);
 	}
 
 	.Landing-left b,
 	.Landing-left h1 {
-		font-family: 'Roboto Slab', serif;
-		color: #0C356A;
+		font-family: 'Merriweather', serif;
 		font-size: 46px;
+		
+		color: var(--primary);
 	}
-
-	.Landing-left b {
-		color: #FFC436;
-	}
-
+	
 	.Character {
 		height: 100%;
 	}

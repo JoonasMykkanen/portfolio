@@ -6,7 +6,18 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 07:09:15 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/19 15:58:59 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/22 13:06:12 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+:root {
+	--primary: #2F5D8C;
+	--secondary: #A38881;
+	
+	--highlight: #896E38;
+
+	--detail: #896E38;
+	
+	--background: #D8D8D6;
+	--secondary-bg: #D8D8D6;
+}

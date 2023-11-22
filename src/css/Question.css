@@ -1,23 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   About.jsx                                          :+:      :+:    :+:   */
+/*   Question.css                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/09 06:33:18 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/15 06:21:57 by jmykkane         ###   ########.fr       */
+/*   Created: 2023/11/21 13:46:07 by jmykkane          #+#    #+#             */
+/*   Updated: 2023/11/22 13:09:30 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-import '../css/About.css'
-
-const About = () => {
-  return (
-    <div className="About">
-      <h1>Who am I?</h1>
-    </div>
-  )
+#q1,
+#q2,
+#q3,
+#q4,
+#q5,
+#q6,
+#q7,
+#q8,
+#q9,
+#q10,
+#q11,
+#q12,
+#q13,
+#q14,
+#q15,
+#q16
+{
+	fill: var(--secondary) !important;
 }
-
-export default About

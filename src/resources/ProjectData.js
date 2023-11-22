@@ -6,34 +6,34 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 08:01:08 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/21 10:55:47 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/22 15:44:05 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // Datastructure for projects base
 const data = {
   'miniRT': {
-    'text': 'In this team based project, we developed a 3D graphics engine to simulate how light interacts with different objects to create realistic image.',
+    'text': 'In this team based project, we developed a 3D graphics engine to simulate how light interacts with different objects to create realistic image with raytracing. Performance was key factor when making decisions from our cohort we were only team to implement multithreading to boost it.',
     'sub': 'psssst',
-    'stack': ['C', 'Threadpool', '3D Graphics', 'RayTracing'],
+    'stack': ['C', 'threadpool', 'vectors'],
     'icon': './src/resources/icons/rt.png'
   },
   'Minishell': {
-    'text': 'Constructing basic UNIX shell. Gained deep insights on how operating systems handle programs and files.',
+    'text': 'Also a team based project, goal was to craft our very own shell. My main area of responsibility was to create the pipeline that handles executing commands as well as builtin commands such as EXPORT & ECHO.',
     'sub': 'we should',
-    'stack': ['C', 'pipes', 'redirections', 'parsing', 'input sanitizing'],
+    'stack': ['C', 'fork', 'pipe', 'redir', 'parsing'],
     'icon': '../resources/icons/shell.png'
   },
   'Philosophers': {
-    'text': "This project tackles a famous puzzle in computer programming, known as the Dining Philosophers Problem. Imagine five philosophers sitting around a table, with a fork between each of them. To eat, each philosopher needs two forks, but there's only one on either side of them.",
+    'text': "This project tackles a famous puzzle in computer programming, known as the 'Dining Philosophers Problem'. It makes you be very careful about resources being splitted up with multiple threads.",
     'sub': 'connect &',
-    'stack': ['C', 'Multithreading', 'Mutexes'],
+    'stack': ['C', 'pthread', 'mutex'],
     'icon': '../resources/icons/philo.png'
   },
   'webserv': {
     'text': "webserv is complete http server able to start serving your awesome websites to whole wide world! Main goal being to stay up at all cost and never hang, just like a real server.",
     'sub': 'work together',
-    'stack': ['C++', 'Sockets', 'http'],
+    'stack': ['C++', 'sockets', 'http'],
     'icon': '../resources/icons/serv.png'
   },
 }

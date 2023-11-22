@@ -6,7 +6,7 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 07:47:33 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/17 14:27:12 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/22 14:16:43 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ const Landing = ({ mouse }) => {
           <h1>
             Hello there👋🏼
             <br />
-            My name is <b>Joonas</b>
-            <span>.</span>
+            My name is <b>Joonas</b>.
           </h1>
           <p>
+            I'm
             <span className="span-highlight">Developer</span>
             from Hyvinkää, Finland.
           </p>
