@@ -6,7 +6,7 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 08:01:08 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/22 18:43:59 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/23 07:21:53 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ const data = {
     'stack': ['C', 'fork', 'pipe', 'redir', 'parsing'],
     'icon': '../resources/icons/shell.png'
   },
-  'Philosophers': {
+  'Philo': {
     'text': "This project tackles a famous puzzle in computer programming, known as the 'Dining Philosophers Problem'. It makes you be very careful about resources being splitted up with multiple threads.",
     'sub': 'connect &',
     'stack': ['C', 'pthread', 'mutex'],
