@@ -6,7 +6,7 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 05:52:35 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/22 15:28:10 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/23 18:58:56 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ const ProjectTtem = ({ objRef, current, data }) => {
   let img
   if (current === 'miniRT') img = rt
   else if (current === 'Minishell') img = shell
-  else if (current === 'Philosophers') img = philo
+  else if (current === 'Philo') img = philo
   else if (current === 'webserv') img = server
 
   

@@ -6,7 +6,7 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 19:54:16 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/22 16:33:30 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/11/23 18:59:36 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ const Item = (props) => {
     <>
       <div onMouseEnter={props.onMouseEnter} onMouseLeave={props.onMouseLeave} className='left'>
         {
-          props.title === 'Philosophers'
+          props.title === 'Philo'
             ? <a href={liProfile}><h2 className="text">{props.title}<span>{props.sub}</span></h2></a>
             : <h2 className="text">{props.title}<span>{props.sub}</span></h2>
         }
