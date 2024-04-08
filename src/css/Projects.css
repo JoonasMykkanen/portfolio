@@ -6,27 +6,22 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 20:00:58 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/22 16:24:47 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/12/31 11:49:06 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 .Projects {
 	background-color: var(--background);
-	position: relative;
-	padding-top: 20vh;
-	height: 115vh;
-	box-sizing: border-box;
-	width: calc(100vw - 6vh);
-	padding-left: 5vh;
 	display: flex;
-	align-items: flex-start;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 
 /* TITLE */
 .Projects h1 {
 	font-family: 'Merriweather', serif;
-	text-decoration: underline;
 	display: flex;
 	justify-content: center;
 	margin-bottom: 12vh;
@@ -44,157 +39,18 @@
 	padding-right: 0;
 }
 
-/* ---------------------------------- */
-
-.container {
-	font-family: 'Merriweather', serif;
-	box-sizing: border-box;
-	width: 40%;
-}
-
-/* ORIGIANL TEXT */
-.text {
-	height: 12vh;
-	font-size: 10vh;
-	line-height: 100%;
-	margin-top: 0;
-	margin-bottom: 0;
-	width: 100%;
-	color: var(--primary);
-	background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
-	-webkit-background-clip: text;
-	background-clip: text;
-	background-size: 0%;
-	transition: background-size cubic-bezier(.1,.5,.5,1) 0.5s;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	border-bottom: 2px solid var(--highlight);
-}
-
-/* HOVER TEXT COLOR */
-.text span {
-	color: var(--detail)
-}
-
-.left {
-	position: relative;
-	width: 100%;
-}
-
-.right {
-	width: calc(55% - 5vh);
-	position: absolute;
-	padding-top: 5%;
-	right: 5vh;
-}
-
-.item-details {
-	position: absolute;
-	margin-top: 22.5%;
-	padding-left: 3vh;
-	height: 80vh;
-	width: 100%;
-	display: flex;
-}
-
-.item-mask {
-	position: absolute;
-	width: 75%;
-	display: flex;
-	justify-content: flex-end;
-	right: 0;
-	-webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
-	mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
-}
-
-.item-details-text {
-	position: absolute;
-	width: 40%;
-	left: 0;
-}
-
-/* ITEM DETAILS HEADING */
-.item-details h3 {
-	font-family: 'Merriweather', serif;
-	color: var(--detail);
-	font-size: 32px;
-	height: auto;
-	padding: 0;
-	margin: 0;
-}
-
-/* ITEM DETAILS BODY */
-.item-details p {
-	font-family: 'Merriweather', serif;
-	color: var(--primary);
-	font-size: 20px;
-	height: auto;
-	padding: 0;
-	margin: 0;
-}
-
-.item-details img {
-	clip-path: circle(50% at 50% 50%);
-	height: auto;
-	width: 80%;
-}
-
-/* HOVERING SELECTION BOX */
-.container span {
-	font-family: 'Merriweather', serif;
-	position: absolute;
-	margin-left: 0 !important; 
-	height: 100%;
-	width: 100%;
-	background-color: var(--primary);
-
-	clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
-	transform-origin: center;
-	transition: all cubic-bezier(.1,.5,.5,1) 0.4s;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-
-	padding-top: 0;
-	padding-bottom: 0;
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
-/* Rectangle animation */
-.text:hover > span {
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-.container a {
-	text-decoration: none;
-	color: inherit;
-}
-
-/* TECH STACK PART */
-
-.stack {
-	grid-template-columns: repeat(3, min-content);
-	margin-top: -1vh;
-	display: grid;
-	width: 95%;
-	gap: 1vh;
-}
-
-.stack-item {
-	font-family: 'Monaco', 'Monospace' !important;
+.project-item {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 20px !important;
-	background: var(--secondary);
-	border-radius: 10px;
-	box-sizing: border-box;
-	padding-right: 5px !important;
-	padding-left: 5px !important;
-	padding-top: 3px !important;
-	padding-bottom: 3px !important;
-	border: 2px solid var(--detail);
+	/* flex-direction: column; */
+	margin-top: 150px;
+}
+
+.mac {
+	width: 50%;
+}
+
+.mac-img {
+	width: 50%;
 }

@@ -6,64 +6,10 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 11:55:39 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/22 16:41:43 by jmykkane         ###   ########.fr       */
+/*   Updated: 2023/12/30 15:03:19 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 .Contact {
 	background-color: var(--background);
-	height: 90vh;
-	width: auto;
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.header {
-	width: 50%;
-}
-
-.Contact h1 {
-	font-family: 'Roboto Slab', serif;
-	justify-content: center;
-	color: var(--primary);
-	font-size: 64px;
-	display: flex;
-}
-
-.Contact h2 {
-	font-family: 'Roboto Slab', serif;
-	justify-content: center;
-	color: var(--primary);
-	font-size: 48px;
-	display: flex;
-}
-
-.Contact span {
-	font-family: 'Roboto Slab', serif;
-	color: var(--detail);
-	font-size: 64px;
-}
-
-.Contact p {
-	margin-top: -5vh;
-	font-family: 'Roboto Slab', serif;
-	color: var(--detail);
-	font-size: 32px;
-	line-height: 1;
-}
-
-.logos {
-    display: grid;
-    grid-template-columns: repeat(2, min-content);
-    justify-content: center; /* Center align the grid */
-    gap: 10vh; /* Optional: adds some space between the images */
-}
-
-.logos img {
-	padding-top: 5vh;
-    width: 250px; /* Set a fixed width */
-    height: 250px; /* Set a fixed height */
-    object-fit: contain; /* Keep the aspect ratio of the images */
 }
