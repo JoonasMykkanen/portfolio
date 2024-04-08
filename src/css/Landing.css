@@ -6,7 +6,7 @@
 /*   By: jmykkane <jmykkane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 11:57:32 by jmykkane          #+#    #+#             */
-/*   Updated: 2023/11/22 17:12:27 by jmykkane         ###   ########.fr       */
+/*   Updated: 2024/04/08 15:35:26 by jmykkane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 	margin-top: -5vh;
 	display: flex;
 	height: 100vh;
+  overflow-y: hidden;
 	width: calc(100vw - 6vh);
 	box-sizing: border-box;
 	z-index: 5;
